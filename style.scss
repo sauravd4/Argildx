@@ -1,7 +1,7 @@
 @import "_colors";
 @import "_variable";
 
-.btn-css {
+.btn-yellow {
     padding: 1.563rem 3.125rem 1.438rem;
     font-size: 1rem;
     min-width: 12.5rem;
@@ -10,7 +10,7 @@
 
 body {
     margin: 0;
-    font-family: $font;
+    font-family: $open-sans-font;
     font-size: 16px;
 }
 
@@ -23,7 +23,7 @@ body {
         position: fixed;
         z-index: 501;
         width: 100%;
-        background: $primary-color;
+        background: $white-color;
         border-bottom-width: 1px;
         border-bottom-style: solid;
         height: 5.5rem;
@@ -43,7 +43,7 @@ body {
             float: right;
 
             .btn-navigate {
-                color: $btn-navigate;
+                color: $shuttle-gray-color;
                 padding: 0 0.625rem;
                 height: 5.5rem;
                 line-height: 5.5rem;
@@ -61,7 +61,7 @@ body {
     }
 
     .main {
-        background-color: $primary-color;
+        background-color: $white-color;
         padding-top: 5.5rem;
 
         .image-top {
@@ -75,7 +75,7 @@ body {
                 margin: 0 auto;
                 width: 60%;
                 text-align: center;
-                color: $primary-color;
+                color: $white-color;
                 font-size: 2.125rem;
                 font-weight: 600;
                 padding-top: 4.375rem;
@@ -90,10 +90,6 @@ body {
                     text-align: center;
                     clear: both;
                     margin-top: 2.5rem;
-                }
-
-                .btn-consultation {
-                    @extend .btn-css;
                 }
             }
         }
@@ -114,11 +110,11 @@ body {
         }
 
         .div-services {
-            background-color: $primary-color;
+            background-color: $white-color;
 
             ul {
                 margin: 0;
-                padding: $padding;
+                padding: $padding-paragraph;
                 display: flex;
                 text-align: center;
                 font-weight: bold;
@@ -141,13 +137,13 @@ body {
 
             a {
                 display: block;
-                padding: $padding 0.75rem;
+                padding: $padding-paragraph 0.75rem;
                 text-decoration: none;
             }
         }
 
         .div-who-we-are {
-            background-color: $div-who-we-are;
+            background-color: $off-white-color;
             padding-bottom: 4rem;
 
             .content-who-we-are {
@@ -160,17 +156,15 @@ body {
 
                 p {
                     font-size: 1.625rem;
-                    color: $paragraph-color;
+                    color: $mine-shaft-color;
                     line-height: 1.65em;
                 }
             }
 
             .btn-learn {
-                background-color: $btn-color;
-                border-color: $btn-color;
-                color: $btn-learn-color;
-
-                @extend .btn-css;
+                background-color: $supernova-color;
+                border-color: $supernova-color;
+                color: $off-black-color;
             }
         }
     }
@@ -181,7 +175,7 @@ body {
         padding-top: 1.875rem;
 
         .copyright {
-            color: $copyright-color;
+            color: $gray-color;
             padding-left: 2.5rem;
         }
     }
