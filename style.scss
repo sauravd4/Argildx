@@ -1,190 +1,188 @@
+@import "_colors";
+@import "_variable";
 
-@import '_colors';
-$padding: 0.375rem;
-
-.btn-css{
-  padding: 1.563rem 3.125rem 1.438rem;
-  font-size: 1rem;
-  min-width: 12.5rem;
-  border-radius: 0.1875rem;
+.btn-css {
+    padding: 1.563rem 3.125rem 1.438rem;
+    font-size: 1rem;
+    min-width: 12.5rem;
+    border-radius: 0.1875rem;
 }
 
-
-body{
-  margin: 0;
-  font-family: 'Open Sans','HelveticaNeue','Helvetica Neue',Helvetica,Arial;
-  font-size: 16px;
+body {
+    margin: 0;
+    font-family: $font;
+    font-size: 16px;
 }
 
-.centre{
-  text-align: center;
+.centre {
+    text-align: center;
 }
 
-.body{ 
-  .header{
-  position: fixed;
-  z-index: 501;
-  width: 100%;
-  background: $primary-color;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  height: 5.5rem;
-  line-height: 5.5rem;
+.body {
+    .header {
+        position: fixed;
+        z-index: 501;
+        width: 100%;
+        background: $primary-color;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        height: 5.5rem;
+        line-height: 5.5rem;
 
-.inner-header{
-  width: 85%;
-  margin: auto;
-  height: 100%;
-}
-
-  .logo{
-    float: left;
-    
-  }
-
-  .div-navigation{
-    float: right;
-
-    .btn-navigate{
-      color: $btn-navigate;
-      padding: 0 0.625rem;
-      height: 5.5rem;
-      line-height: 5.5rem;
-      transition: background-color 0.4s ease-in-out,color 0.4s ease-in-out,border-color 0.8s ease-in-out;
-      text-decoration: none;
-      font-weight: normal;
-      font-weight: 600;
-      font-size: 0.8125rem;
-      &:hover {
-        border-bottom: 0.125rem solid #000000;
-      }
-    }
-  }
-  }
-  
-  .main{
-  background-color: $primary-color;
-  padding-top: 5.5rem;
-  
-    
-  .image-top{
-    background-repeat: no-repeat;
-    background-image: url(https://argildx.com/wp-content/uploads/2017/10/home-banner.jpg);
-    background-attachment: scroll;
-    background-position: center center;
-    height: 21.88rem;
-
-    .centre-content{
-      margin: 0 auto;
-      width: 60%;
-      text-align: center;
-      color: $primary-color;
-      font-size: 2.125rem;
-      font-weight: 600;
-      padding-top: 4.375rem;
-      font-family: 'Open Sans','HelveticaNeue','Helvetica Neue',Helvetica,Arial,sans-serif;
-
-      .div-centre{
-        margin: 1.875rem auto;
-      }
-
-      .button-enter {
-        display: block;
-        text-align: center;
-        clear: both;
-        margin-top: 2.5rem;
-      }
-
-      .btn-consultation {
-        @extend .btn-css;
-      }
-    }
-
-    
-  }
-
-  .div-solution-partner{
-    background-color: $black-color;
-    border: none;
-
-    .img-solution{
-      margin: 0 auto;
-      vertical-align: bottom;
-      width: 21.25rem;
-
-      img{
-        margin: 1.875rem auto;
-      }
-
-    }
-  }
-
-  .div-services {
-    background-color: $primary-color;
-    
-    
-      ul {
-        margin: 0;
-        padding: $padding;
-        display: flex;
-        text-align: center;
-        font-weight: bold;
-    
-      li { 
-        list-style: none;
-          width:50%;  
-    
-          img{
-            display: block;
+        .inner-header {
+            width: 85%;
             margin: auto;
-          }
-    
-          span{
-            margin-top: 1.25rem;
-          }
+            height: 100%;
         }
-      }
-    
-      a {
-        display: block;
-        padding: $padding 0.75rem;
-        text-decoration: none;
-      }
+
+        .logo {
+            float: left;
+        }
+
+        .div-navigation {
+            float: right;
+
+            .btn-navigate {
+                color: $btn-navigate;
+                padding: 0 0.625rem;
+                height: 5.5rem;
+                line-height: 5.5rem;
+                transition: background-color 0.4s ease-in-out,color 0.4s ease-in-out,border-color 0.8s ease-in-out;
+                text-decoration: none;
+                font-weight: normal;
+                font-weight: 600;
+                font-size: 0.8125rem;
+
+                &:hover {
+                    border-bottom: 0.125rem solid #000000;
+                }
+            }
+        }
     }
 
-    .div-who-we-are{
-      background-color: $div-who-we-are;
+    .main {
+        background-color: $primary-color;
+        padding-top: 5.5rem;
 
-      .content-who-we-are{
-      width: 85%;
-      margin: auto;
-      h2{
-        padding-top: 1.25rem;
-      }
-      p{
-        font-size: 1.625rem;
-        color: $paragraph-color;
-        line-height: 1.65em;
-      }
-      }
+        .image-top {
+            background-repeat: no-repeat;
+            background-image: url(https://argildx.com/wp-content/uploads/2017/10/home-banner.jpg);
+            background-attachment: scroll;
+            background-position: center center;
+            height: 21.88rem;
 
-      .btn-learn{
-        background-color: $btn-color;
-        border-color: $btn-color;
-        color: $btn-learn-color;
-        @extend .btn-css;
-      }
+            .centre-content {
+                margin: 0 auto;
+                width: 60%;
+                text-align: center;
+                color: $primary-color;
+                font-size: 2.125rem;
+                font-weight: 600;
+                padding-top: 4.375rem;
+                font-family: 'Open Sans','HelveticaNeue','Helvetica Neue',Helvetica,Arial,sans-serif;
+
+                .div-centre {
+                    margin: 1.875rem auto;
+                }
+
+                .button-enter {
+                    display: block;
+                    text-align: center;
+                    clear: both;
+                    margin-top: 2.5rem;
+                }
+
+                .btn-consultation {
+                    @extend .btn-css;
+                }
+            }
+        }
+
+        .div-solution-partner {
+            background-color: $black-color;
+            border: none;
+
+            .img-solution {
+                margin: 0 auto;
+                vertical-align: bottom;
+                width: 21.25rem;
+
+                img {
+                    margin: 1.875rem auto;
+                }
+            }
+        }
+
+        .div-services {
+            background-color: $primary-color;
+
+            ul {
+                margin: 0;
+                padding: $padding;
+                display: flex;
+                text-align: center;
+                font-weight: bold;
+                margin-bottom: 2rem;
+
+                li {
+                    list-style: none;
+                    width: 50%;
+
+                    img {
+                        display: block;
+                        margin: auto;
+                    }
+
+                    span {
+                        margin-top: 1.25rem;
+                    }
+                }
+            }
+
+            a {
+                display: block;
+                padding: $padding 0.75rem;
+                text-decoration: none;
+            }
+        }
+
+        .div-who-we-are {
+            background-color: $div-who-we-are;
+            padding-bottom: 4rem;
+
+            .content-who-we-are {
+                width: 85%;
+                margin: auto;
+
+                h2 {
+                    padding-top: 1.25rem;
+                }
+
+                p {
+                    font-size: 1.625rem;
+                    color: $paragraph-color;
+                    line-height: 1.65em;
+                }
+            }
+
+            .btn-learn {
+                background-color: $btn-color;
+                border-color: $btn-color;
+                color: $btn-learn-color;
+
+                @extend .btn-css;
+            }
+        }
+    }
+
+    .footer {
+        height: 3.75rem;
+        background-color: $black-color;
+        padding-top: 1.875rem;
+
+        .copyright {
+            color: $copyright-color;
+            padding-left: 2.5rem;
+        }
     }
 }
-
-.footer{
-  height: 3.75rem;
-  background-color: $black-color;
-  padding-top: 1.875rem;
-  .copyright{
-    color: $copyright-color;
-    padding-left: 2.5rem; 
-  }
-}
-}
-
