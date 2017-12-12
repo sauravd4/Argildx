@@ -9,7 +9,7 @@ body {
   position: fixed;
   z-index: 501;
   width: 100%;
-  background: #678abe;
+  background: #ffffff;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   height: 88px;
@@ -20,6 +20,20 @@ body {
     height: 100%; }
   .body .header .logo {
     float: left; }
+  .body .header .divNavigation {
+    float: right; }
+    .body .header .divNavigation .btnNavigate {
+      color: #55606e;
+      padding: 0 10px;
+      height: 88px;
+      line-height: 88px;
+      transition: background-color 0.4s ease-in-out,color 0.4s ease-in-out,border-color 0.8s ease-in-out;
+      text-decoration: none;
+      font-weight: normal;
+      font-weight: 600;
+      font-size: 13px; }
+      .body .header .divNavigation .btnNavigate:hover {
+        border-bottom: 2px solid #000000; }
 
 .body .main {
   background-color: #ffffff;
