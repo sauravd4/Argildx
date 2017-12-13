@@ -2,6 +2,9 @@
   padding: 1.563rem 3.125rem 1.438rem;
   font-size: 1rem;
   min-width: 12.5rem;
+  -webkit-border-radius: 0.1875rem;
+  -moz-border-radius: 0.1875rem;
+  -ms-border-radius: 0.1875rem;
   border-radius: 0.1875rem; }
 
 body {
@@ -20,7 +23,12 @@ body {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   height: 5.5rem;
-  line-height: 5.5rem; }
+  line-height: 5.5rem;
+  box-shadow: 0 0 4px 2px rgba(50, 50, 50, 0.43);
+  -webkit-box-shadow: 0 0 4px 2px rgba(50, 50, 50, 0.43);
+  -moz-box-shadow: 0 0 4px 2px rgba(50, 50, 50, 0.43);
+  -ms-box-shadow: 0 0 4px 2px rgba(50, 50, 50, 0.43);
+  -o-box-shadow: 0 0 4px 2px rgba(50, 50, 50, 0.43); }
   .body .header .inner-header {
     width: 85%;
     margin: auto;

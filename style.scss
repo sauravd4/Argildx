@@ -1,11 +1,12 @@
 @import "_colors";
 @import "_variable";
+@import "_mixins";
 
 .btn-yellow {
     padding: 1.563rem 3.125rem 1.438rem;
     font-size: 1rem;
     min-width: 12.5rem;
-    border-radius: 0.1875rem;
+    @include border-radius(0.1875rem);
 }
 
 body {
@@ -28,6 +29,7 @@ body {
         border-bottom-style: solid;
         height: 5.5rem;
         line-height: 5.5rem;
+        @include box-shadow(0 0 4px 2px rgba(50,50,50,0.43));
 
         .inner-header {
             width: 85%;
