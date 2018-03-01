@@ -1,6 +1,16 @@
+.btn-yellow {
+  padding: 1.563rem 3.125rem 1.438rem;
+  font-size: 1rem;
+  min-width: 12.5rem;
+  -webkit-border-radius: 0.1875rem;
+  -moz-border-radius: 0.1875rem;
+  -ms-border-radius: 0.1875rem;
+  border-radius: 0.1875rem; }
+
 body {
   margin: 0;
-  font-family: 'Open Sans','HelveticaNeue','Helvetica Neue',Helvetica,Arial,sans-se; }
+  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial;
+  font-size: 16px; }
 
 .centre {
   text-align: center; }
@@ -12,97 +22,110 @@ body {
   background: #ffffff;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  height: 88px;
-  line-height: 88px; }
-  .body .header .innerHeader {
+  height: 5.5rem;
+  line-height: 5.5rem;
+  box-shadow: 0 0 4px 2px rgba(50, 50, 50, 0.43);
+  -webkit-box-shadow: 0 0 4px 2px rgba(50, 50, 50, 0.43);
+  -moz-box-shadow: 0 0 4px 2px rgba(50, 50, 50, 0.43);
+  -ms-box-shadow: 0 0 4px 2px rgba(50, 50, 50, 0.43);
+  -o-box-shadow: 0 0 4px 2px rgba(50, 50, 50, 0.43); }
+  .body .header .inner-header {
     width: 85%;
     margin: auto;
     height: 100%; }
   .body .header .logo {
     float: left; }
+  .body .header .div-navigation {
+    float: right; }
+    .body .header .div-navigation .btn-navigate {
+      color: #55606e;
+      padding: 0 0.625rem;
+      height: 5.5rem;
+      line-height: 5.5rem;
+      transition: background-color 0.4s ease-in-out,color 0.4s ease-in-out,border-color 0.8s ease-in-out;
+      text-decoration: none;
+      font-weight: normal;
+      font-weight: 600;
+      font-size: 0.8125rem; }
+      .body .header .div-navigation .btn-navigate:hover {
+        border-bottom: 0.125rem solid #000000; }
 
 .body .main {
   background-color: #ffffff;
-  padding-top: 88px; }
-  .body .main .imageTop {
+  padding-top: 5.5rem; }
+  .body .main .image-top {
     background-repeat: no-repeat;
     background-image: url(https://argildx.com/wp-content/uploads/2017/10/home-banner.jpg);
     background-attachment: scroll;
     background-position: center center;
-    height: 350px; }
-    .body .main .imageTop .centreContent {
-      margin: 0px auto;
+    height: 21.88rem; }
+    .body .main .image-top .centre-content {
+      margin: 0 auto;
       width: 60%;
       text-align: center;
-      color: white;
-      font-size: 34px;
+      color: #ffffff;
+      font-size: 2.125rem;
       font-weight: 600;
-      padding-top: 70px;
+      padding-top: 4.375rem;
       font-family: 'Open Sans','HelveticaNeue','Helvetica Neue',Helvetica,Arial,sans-serif; }
-      .body .main .imageTop .centreContent .divCentre {
-        margin: 30px auto; }
-      .body .main .imageTop .centreContent .buttonCenter {
+      .body .main .image-top .centre-content .div-centre {
+        margin: 1.875rem auto; }
+      .body .main .image-top .centre-content .button-enter {
         display: block;
         text-align: center;
         clear: both;
-        margin-top: 40px; }
-      .body .main .imageTop .centreContent .btnConsultation {
-        padding: 25px 50px 23px;
-        font-size: 15px;
-        min-width: 200px; }
-  .body .main .divSolutionPartner {
+        margin-top: 2.5rem; }
+  .body .main .div-solution-partner {
     background-color: #000000;
     border: none; }
-    .body .main .divSolutionPartner .imgSolution {
+    .body .main .div-solution-partner .img-solution {
       margin: 0 auto;
       vertical-align: bottom;
-      width: 340px; }
-      .body .main .divSolutionPartner .imgSolution img {
-        margin: 30px auto; }
-  .body .main .divServices {
+      width: 21.25rem; }
+      .body .main .div-solution-partner .img-solution img {
+        margin: 1.875rem auto; }
+  .body .main .div-services {
     background-color: #ffffff; }
-    .body .main .divServices ul {
+    .body .main .div-services ul {
       margin: 0;
-      padding: 6px;
+      padding: 0.375rem;
       display: flex;
       text-align: center;
-      font-weight: bold; }
-      .body .main .divServices ul li {
+      font-weight: bold;
+      margin-bottom: 2rem; }
+      .body .main .div-services ul li {
         list-style: none;
         width: 50%; }
-        .body .main .divServices ul li img {
+        .body .main .div-services ul li img {
           display: block;
           margin: auto; }
-        .body .main .divServices ul li span {
-          margin-top: 20px; }
-    .body .main .divServices a {
+        .body .main .div-services ul li span {
+          margin-top: 1.25rem; }
+    .body .main .div-services a {
       display: block;
-      padding: 6px 12px;
+      padding: 0.375rem 0.75rem;
       text-decoration: none; }
-  .body .main .divWhoWeAre {
-    background-color: #f0f0f0; }
-    .body .main .divWhoWeAre .contentWhoWeAre {
+  .body .main .div-who-we-are {
+    background-color: #f0f0f0;
+    padding-bottom: 4rem; }
+    .body .main .div-who-we-are .content-who-we-are {
       width: 85%;
       margin: auto; }
-      .body .main .divWhoWeAre .contentWhoWeAre h2 {
-        padding-top: 20px; }
-      .body .main .divWhoWeAre .contentWhoWeAre p {
-        font-size: 26px;
+      .body .main .div-who-we-are .content-who-we-are h2 {
+        padding-top: 1.25rem; }
+      .body .main .div-who-we-are .content-who-we-are p {
+        font-size: 1.625rem;
         color: #303030;
         line-height: 1.65em; }
-    .body .main .divWhoWeAre .btnLearn {
+    .body .main .div-who-we-are .btn-learn {
       background-color: #f9ce01;
       border-color: #f9ce01;
-      color: #0a0a0a;
-      padding: 25px 50px 23px;
-      font-size: 15px;
-      min-width: 200px;
-      border-radius: 3px; }
+      color: #0a0a0a; }
 
 .body .footer {
-  height: 60px;
-  background-color: black;
-  padding-top: 30px; }
+  height: 3.75rem;
+  background-color: #000000;
+  padding-top: 1.875rem; }
   .body .footer .copyright {
     color: #a5a9af;
-    padding-left: 40px; }
+    padding-left: 2.5rem; }

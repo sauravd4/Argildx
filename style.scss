@@ -1,166 +1,184 @@
-$padding: 6px;
-$primary-color: #ffffff;
-$btn-color: #f9ce01;
-body{
-  margin: 0;
-  font-family: 'Open Sans','HelveticaNeue','Helvetica Neue',Helvetica,Arial,sans-se
+@import "_colors";
+@import "_variable";
+@import "_mixins";
+
+.btn-yellow {
+    padding: 1.563rem 3.125rem 1.438rem;
+    font-size: 1rem;
+    min-width: 12.5rem;
+    @include border-radius(0.1875rem);
 }
 
-.centre{
-  text-align: center;
+body {
+    margin: 0;
+    font-family: $open-sans-font;
+    font-size: 16px;
 }
 
-.body{ 
-  .header{
-  position: fixed;
-  z-index: 501;
-  width: 100%;
-  background: $primary-color;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  height: 88px;
-  line-height: 88px;
-
-.innerHeader{
-  width: 85%;
-  margin: auto;
-  height: 100%;
+.centre {
+    text-align: center;
 }
 
-  .logo{
-    float: left;
-    
-  }
-  }
-  
-  .main{
-  background-color: $primary-color;
-  padding-top: 88px;
-  
-    
-  .imageTop{
-    background-repeat: no-repeat;
-    background-image: url(https://argildx.com/wp-content/uploads/2017/10/home-banner.jpg);
-    background-attachment: scroll;
-    background-position: center center;
-    height: 350px;
+.body {
+    .header {
+        position: fixed;
+        z-index: 501;
+        width: 100%;
+        background: $white-color;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        height: 5.5rem;
+        line-height: 5.5rem;
+        @include box-shadow(0 0 4px 2px rgba(50,50,50,0.43));
 
-    .centreContent{
-      margin: 0px auto;
-      width: 60%;
-      text-align: center;
-      color: white;
-      font-size: 34px;
-      font-weight: 600;
-      padding-top: 70px;
-      font-family: 'Open Sans','HelveticaNeue','Helvetica Neue',Helvetica,Arial,sans-serif;
-
-      .divCentre{
-        margin: 30px auto;
-      }
-
-      .buttonCenter {
-        display: block;
-        text-align: center;
-        clear: both;
-        margin-top: 40px;
-      }
-
-      .btnConsultation {
-        padding: 25px 50px 23px;
-        font-size: 15px;
-        min-width: 200px;
-      }
-    }
-
-    
-  }
-
-  .divSolutionPartner{
-    background-color: #000000;
-    border: none;
-
-    .imgSolution{
-      margin: 0 auto;
-      vertical-align: bottom;
-      width: 340px;
-
-      img{
-        margin: 30px auto;
-      }
-
-    }
-  }
-
-  .divServices {
-    background-color: $primary-color;
-    
-    
-      ul {
-        margin: 0;
-        padding: $padding;
-        display: flex;
-        text-align: center;
-        font-weight: bold;
-    
-      li { 
-        list-style: none;
-          width:50%;  
-    
-          img{
-            display: block;
+        .inner-header {
+            width: 85%;
             margin: auto;
-          }
-    
-          span{
-            margin-top: 20px;
-          }
+            height: 100%;
         }
-      }
-    
-      a {
-        display: block;
-        padding: $padding 12px;
-        text-decoration: none;
-      }
+
+        .logo {
+            float: left;
+        }
+
+        .div-navigation {
+            float: right;
+
+            .btn-navigate {
+                color: $shuttle-gray-color;
+                padding: 0 0.625rem;
+                height: 5.5rem;
+                line-height: 5.5rem;
+                transition: background-color 0.4s ease-in-out,color 0.4s ease-in-out,border-color 0.8s ease-in-out;
+                text-decoration: none;
+                font-weight: normal;
+                font-weight: 600;
+                font-size: 0.8125rem;
+
+                &:hover {
+                    border-bottom: 0.125rem solid #000000;
+                }
+            }
+        }
     }
 
-    .divWhoWeAre{
-      background-color: #f0f0f0;
+    .main {
+        background-color: $white-color;
+        padding-top: 5.5rem;
 
-      .contentWhoWeAre{
-      width: 85%;
-      margin: auto;
-      h2{
-        padding-top: 20px;
-      }
-      p{
-        font-size: 26px;
-        color: #303030;
-        line-height: 1.65em;
-      }
-      }
+        .image-top {
+            background-repeat: no-repeat;
+            background-image: url(https://argildx.com/wp-content/uploads/2017/10/home-banner.jpg);
+            background-attachment: scroll;
+            background-position: center center;
+            height: 21.88rem;
 
-      .btnLearn{
-        background-color: $btn-color;
-        border-color: $btn-color;
-        color: #0a0a0a;
-        padding: 25px 50px 23px;
-        font-size: 15px;
-        min-width: 200px;
-        border-radius: 3px;
-      }
+            .centre-content {
+                margin: 0 auto;
+                width: 60%;
+                text-align: center;
+                color: $white-color;
+                font-size: 2.125rem;
+                font-weight: 600;
+                padding-top: 4.375rem;
+                font-family: 'Open Sans','HelveticaNeue','Helvetica Neue',Helvetica,Arial,sans-serif;
+
+                .div-centre {
+                    margin: 1.875rem auto;
+                }
+
+                .button-enter {
+                    display: block;
+                    text-align: center;
+                    clear: both;
+                    margin-top: 2.5rem;
+                }
+            }
+        }
+
+        .div-solution-partner {
+            background-color: $black-color;
+            border: none;
+
+            .img-solution {
+                margin: 0 auto;
+                vertical-align: bottom;
+                width: 21.25rem;
+
+                img {
+                    margin: 1.875rem auto;
+                }
+            }
+        }
+
+        .div-services {
+            background-color: $white-color;
+
+            ul {
+                margin: 0;
+                padding: $padding-paragraph;
+                display: flex;
+                text-align: center;
+                font-weight: bold;
+                margin-bottom: 2rem;
+
+                li {
+                    list-style: none;
+                    width: 50%;
+
+                    img {
+                        display: block;
+                        margin: auto;
+                    }
+
+                    span {
+                        margin-top: 1.25rem;
+                    }
+                }
+            }
+
+            a {
+                display: block;
+                padding: $padding-paragraph 0.75rem;
+                text-decoration: none;
+            }
+        }
+
+        .div-who-we-are {
+            background-color: $off-white-color;
+            padding-bottom: 4rem;
+
+            .content-who-we-are {
+                width: 85%;
+                margin: auto;
+
+                h2 {
+                    padding-top: 1.25rem;
+                }
+
+                p {
+                    font-size: 1.625rem;
+                    color: $mine-shaft-color;
+                    line-height: 1.65em;
+                }
+            }
+
+            .btn-learn {
+                background-color: $supernova-color;
+                border-color: $supernova-color;
+                color: $off-black-color;
+            }
+        }
+    }
+
+    .footer {
+        height: 3.75rem;
+        background-color: $black-color;
+        padding-top: 1.875rem;
+
+        .copyright {
+            color: $gray-color;
+            padding-left: 2.5rem;
+        }
     }
 }
-
-.footer{
-  height: 60px;
-  background-color: black;
-  padding-top: 30px;
-  .copyright{
-    color: #a5a9af;
-    padding-left: 40px; 
-  }
-}
-}
-
